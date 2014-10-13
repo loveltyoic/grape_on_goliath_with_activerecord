@@ -1,1 +1,1 @@
-bundle exec ruby server.rb -sv -p3000
+web: bundle exec ruby server.rb -sv -p3000
