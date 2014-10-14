@@ -7,7 +7,7 @@ module Mst
 
     resource :orders do
       get '/remind' do 
-        Order.first
+        Order.find(3)
       end
     end 
   end

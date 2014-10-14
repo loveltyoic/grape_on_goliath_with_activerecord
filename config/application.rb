@@ -1,6 +1,9 @@
 require 'em-synchrony/activerecord'
 require 'yaml'
-require_relative '../app/models/order.rb'
+Dir.glob(File.expand_path('../../app/models/*.rb', __FILE__)) do |file|
+  require file
+end
+
 require_relative '../app/api.rb'
 ENV['RACK_ENV'] ||= 'development'
 
